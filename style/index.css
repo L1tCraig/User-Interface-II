@@ -1,1 +1,239 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of reset */
+
+html {
+  font-size: 62.5%;
+  max-width: 800px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+body,
+footer {
+  background-color: skyblue;
+}
+html,
+a {
+  font-style: oblique;
+  text-align: center;
+}
+.navBox {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+nav a,
+footer a,
+.contactBox button {
+  background-color: lightgray;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 2rem;
+  border-radius: 5px;
+  border: gray 0.5px solid;
+}
+nav a:hover,
+footer a:hover,
+.contactBox button:hover {
+  background-color: forestgreen;
+  color: greenyellow;
+}
+h1 {
+  font-size: 3rem;
+  padding: 2%;
+}
+h1,
+body nav,
+footer {
+  background-color: cadetblue;
+  font-size: 2.5rem;
+}
+footer h4 {
+  font-size: 1.25rem;
+  margin: 1%;
+}
+footer img {
+  width: 10%;
+  align-self: center;
+}
+div.contactBox > a.fbLink {
+  max-width: 10%;
+  align-self: center;
+}
+.footerBox {
+  display: flex;
+  flex-direction: column;
+}
+footer .navButton4,
+footer .fbLink {
+  align-self: center;
+}
+footer .fbLink {
+  background-color: transparent;
+  border: none;
+}
+footer .fbLink:hover {
+  background: none;
+  border: none;
+}
+/*index.html styling below*/
+.bodyImg {
+  width: 96%;
+  max-height: 150px;
+  object-fit: cover;
+  background-color: black;
+  padding: 2%;
+}
+.indexBox {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  justify-content: center;
+}
+.indexBox * {
+  width: 18%;
+  padding: 1%;
+}
+/* about.html styling below */
+.aboutBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+/* projects.html styling below */
+.projectsBox {
+  display: flex;
+  flex-wrap: row wrap;
+  padding: 2%;
+  justify-content: center;
+}
+.projectsBox img {
+  width: 22%;
+  padding: 2%;
+}
+h2 {
+  font-size: 2.25rem;
+  padding: 2%;
+}
+p {
+  font-size: 1.5rem;
+  padding: 2%;
+}
+/* contact.html styling below */
+.contactBox {
+  padding: 2%;
+}
+body a {
+  font-size: 2.25rem;
+}
+footer a {
+  width: 35%;
+  margin: 2%;
+  padding: 2%;
+}
+footer h4,
+footer {
+  margin: 1%;
+  padding: 2%;
+}
+footer {
+  padding-bottom: 5%;
+}
+footer a img {
+  width: 25%;
+}
+/* - [x] Introduce max-width media queries into your project at 800px and 500px 
+- [x] Add accessability features to your webpage
+- [x] Design should closely follow the [mobile wireframe](Wireframes/) given for your chosen layout */
+
+@media (max-width: 800px) {
+  html {
+    width: 96%;
+    margin: 2%;
+  }
+  .bodyImg {
+    width: 96%;
+  }
+}
+@media (max-width: 500px) {
+  .navBox {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 2%;
+  }
+  .navBox a {
+    margin: auto;
+    width: 35%;
+  }
+  html {
+    margin: 2%;
+    width: auto;
+  }
+  .indexBox img {
+    width: 45%;
+  }
+  .indexBox p {
+    width: 80%;
+    margin: auto;
+  }
+  .projectsBox {
+    flex-flow: row wrap;
+    align-content: center;
+  }
+
+  .projectsBox img {
+    width: 46%;
+  }
+}
