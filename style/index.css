@@ -145,6 +145,7 @@ footer .fbLink:hover {
   width: 18%;
   padding: 1%;
 }
+.indexBox > img {border-radius: 50%;}
 /* about.html styling below */
 .aboutBox {
   display: flex;
@@ -152,6 +153,7 @@ footer .fbLink:hover {
   align-items: center;
   padding: 2%;
 }
+.aboutBox > img {border-radius: 50%;}
 /* projects.html styling below */
 .projectsBox {
   display: flex;
@@ -162,6 +164,7 @@ footer .fbLink:hover {
 .projectsBox img {
   width: 22%;
   padding: 2%;
+  border-radius: 50%;
 }
 h2 {
   font-size: 2.25rem;
