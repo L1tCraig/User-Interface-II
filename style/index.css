@@ -56,7 +56,7 @@ html {
   font-size: 62.5%;
   max-width: 800px;
   margin: auto;
-  font-style: oblique;
+  font-family:Papyrus,fantasy;
   text-align: center;
   background-image: url(https://www.cerner.com/-/media/cerner-media-united-states/blog-images/blog_chc-ai-ml-preview.jpg?vs=1);
     background-repeat: no-repeat;
@@ -67,37 +67,40 @@ a {
   text-decoration: none;
 }
 
-.navBox {
+nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 2%;
 }
-nav a,
-footer a,
-.contactBox button {
+nav > a,
+footer > a {
   background-color: lightgray;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding:  1.5% 3%;
   font-size: 2rem;
-  border-radius: 5px;
-  border: gray 0.5px solid;
+  border-radius: 1rem;
+  border: gray 0.3rem ridge;
+  opacity: 0.5;
+}
+body > a.fbLink {
+  opacity: 0.5;
+}
+body > a.fbLink:hover {
+  opacity: 1;
 }
 nav a:hover,
-footer a:hover,
-.contactBox button:hover {
+footer a:hover {
   background-color: forestgreen;
   color: greenyellow;
+  opacity: 1;
 }
 h1 {
   font-size: 3rem;
   padding: 2%;
 }
 header,
-footer {border: ridge 2px yellowgreen;
+footer {border: ridge 0.3rem yellowgreen;
   font-size: 2.5rem;
-  border-radius: 5%;
+  border-radius: 2rem;
 }
 footer h4 {
   font-size: 1.25rem;
@@ -107,16 +110,21 @@ footer img {
   width: 10%;
   align-self: center;
 }
-div.contactBox > a.fbLink {
-  max-width: 10%;
-  align-self: center;
+.fbLink > img {
+  margin: auto;
+  width: 5rem;
+}
+body > a.fbLink > img {
+  margin-top: 2rem;
 }
 footer {
   display: flex;
   flex-direction: column; align-items: center;
 }
-
-
+.email-Phone {color: forestgreen;}
+.email-Phone:hover {
+  color: yellowgreen;
+}
 footer .fbLink {
   background-color: transparent;
   border: none;
@@ -154,13 +162,13 @@ background-color: black;}
 }
 .aboutBox > img {border-radius: 50%;}
 /* projects.html styling below */
-.projectsBox {
+section {
   display: flex;
   flex-wrap: row wrap;
   padding: 2%;
   justify-content: center;
 }
-.projectsBox img {
+section > img {
   width: 22%;
   padding: 2%;
   border-radius: 50%;
@@ -210,18 +218,18 @@ footer a img {
   }
 }
 @media (max-width: 600px) {
-  .navBox {
+  nav {
     display: flex;
     flex-flow: column nowrap;
     padding: 2%;
   }
-  .navBox a {
+  nav > a {
     margin: auto;
     width: 35%;
   }
   html {
-    margin: 2%;
-    width: auto;
+    margin: auto;
+    width: 100vw;
   }
   .indexBox img {
     width: 45%;
@@ -230,12 +238,17 @@ footer a img {
     width: 80%;
     margin: auto;
   }
-  .projectsBox {
+  section {
     flex-flow: row wrap;
     align-content: center;
   }
 
-  .projectsBox img {
+  section > img {
     width: 46%;
   }
+  article {flex-wrap: wrap;
+  }
+  article > img {width: 46%;}
+  article > p {width: 95%;
+  background: none; border: none;}
 }
