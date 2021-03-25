@@ -53,19 +53,13 @@ html {
   font-size: 62.5%;
   max-width: 800px;
   margin: auto;
+  font-style: oblique;
+  text-align: center;
 }
 a {
   text-decoration: none;
 }
-body,
-footer {
-  background-color: skyblue;
-}
-html,
-a {
-  font-style: oblique;
-  text-align: center;
-}
+
 .navBox {
   display: flex;
   justify-content: center;
@@ -128,24 +122,24 @@ footer .fbLink:hover {
   border: none;
 }
 /*index.html styling below*/
+html {background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_636754212_142136.jpg);}
 .bodyImg {
   width: 96%;
-  max-height: 150px;
+  max-height: 10rem;
   object-fit: cover;
   background-color: black;
   padding: 2%;
 }
-.indexBox {
+article {
   display: flex;
   flex-wrap: wrap;
   padding: 2%;
   justify-content: center;
 }
-.indexBox * {
-  width: 18%;
-  padding: 1%;
-}
-.indexBox > img {border-radius: 50%;}
+ 
+article > * {border-radius: 50%;
+  width: 17%;
+  padding: 1%;}
 /* about.html styling below */
 .aboutBox {
   display: flex;
