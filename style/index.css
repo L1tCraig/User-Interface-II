@@ -67,6 +67,8 @@ a {
   text-decoration: none;
 }
 
+
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -139,8 +141,7 @@ footer .fbLink:hover {
   width: 96%;
   max-height: 10rem;
   object-fit: cover;
-  background-color: black;
-  padding: 2%;
+  border-radius: 2rem;
 }
 article {
   display: flex;
