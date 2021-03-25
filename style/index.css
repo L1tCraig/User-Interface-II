@@ -103,10 +103,11 @@ header,
 footer {border: ridge 0.3rem yellowgreen;
   font-size: 2.5rem;
   border-radius: 2rem;
+  margin-top: 2rem;
 }
 footer h4 {
   font-size: 1.25rem;
-  margin: 1%;
+
 }
 footer img {
   width: 10%;
@@ -191,12 +192,11 @@ body a {
 }
 footer a {
   width: 35%;
-  margin: 2%;
+  margin-top: 2%;
   padding: 2%;
 }
 footer h4,
 footer {
-  margin: 1%;
   padding: 2%;
 }
 footer {
