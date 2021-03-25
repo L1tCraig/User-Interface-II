@@ -47,7 +47,10 @@ table {
 	border-spacing: 0;
 }
 
-/* end of reset */
+/* end of reset 
+***
+***
+***/
 
 html {
   font-size: 62.5%;
@@ -55,6 +58,10 @@ html {
   margin: auto;
   font-style: oblique;
   text-align: center;
+  background-image: url(https://www.cerner.com/-/media/cerner-media-united-states/blog-images/blog_chc-ai-ml-preview.jpg?vs=1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: yellowgreen;
 }
 a {
   text-decoration: none;
@@ -87,11 +94,10 @@ h1 {
   font-size: 3rem;
   padding: 2%;
 }
-h1,
-body nav,
-footer {
-  background-color: cadetblue;
+header,
+footer {border: ridge 2px yellowgreen;
   font-size: 2.5rem;
+  border-radius: 5%;
 }
 footer h4 {
   font-size: 1.25rem;
@@ -105,14 +111,12 @@ div.contactBox > a.fbLink {
   max-width: 10%;
   align-self: center;
 }
-.footerBox {
+footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; align-items: center;
 }
-footer .navButton4,
-footer .fbLink {
-  align-self: center;
-}
+
+
 footer .fbLink {
   background-color: transparent;
   border: none;
@@ -122,7 +126,7 @@ footer .fbLink:hover {
   border: none;
 }
 /*index.html styling below*/
-html {background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_636754212_142136.jpg);}
+
 .bodyImg {
   width: 96%;
   max-height: 10rem;
@@ -138,8 +142,9 @@ article {
 }
  
 article > * {border-radius: 50%;
-  width: 17%;
-  padding: 1%;}
+  width: 16%;margin: 1%;
+border: solid skyblue;
+background-color: black;}
 /* about.html styling below */
 .aboutBox {
   display: flex;
@@ -204,7 +209,7 @@ footer a img {
     width: 96%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .navBox {
     display: flex;
     flex-flow: column nowrap;
